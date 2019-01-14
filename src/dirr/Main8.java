@@ -61,10 +61,13 @@ public class Main8 {
                 .orElse(null);
     }
 
-//    public static String[] getAllStringsShorterThan10Characters() {
-//
-//    }
-//
+    public static String[] getAllStringsShorterThan10Characters() {
+        return strings.stream()
+                .filter(s -> s.length()<10)
+                .collect(Collectors.toList())
+                .toArray(new String[]{});
+    }
+
 //    public static List<Integer> getIntegerListOfAllStringLengths() {
 //
 //    }
