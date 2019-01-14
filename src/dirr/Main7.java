@@ -118,10 +118,16 @@ public class Main7 {
         return stringsWhichStartWithSmallA;
     }
 
-//    public static List<String> getAllStringsWhichContainSmallB() {
-//
-//    }
-//
+    public static List<String> getAllStringsWhichContainSmallB() {
+        List<String> stringsWhichContainsSmallB = new ArrayList<>();
+        for(String s : strings){
+            if(s.contains("b")){
+                stringsWhichContainsSmallB.add(s);
+            }
+        }
+        return stringsWhichContainsSmallB;
+    }
+
 //    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
 //
 //    }
