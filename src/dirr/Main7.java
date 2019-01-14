@@ -52,10 +52,18 @@ public class Main7 {
         return evenNumbersLength;
     }
 
-//    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
-//
-//    }
-//
+    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
+        List<Boolean> booleanList = new ArrayList<>();
+        for(Integer n : numbers){
+            if(n % 7 == 0){
+                booleanList.add(true);
+            }else{
+                booleanList.add(false);
+            }
+        }
+        return booleanList.toArray(new Boolean[]{});
+    }
+
 //    public static String getAnyStringOfLength8() {
 //
 //    }
