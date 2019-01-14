@@ -14,10 +14,10 @@ public class Main8 {
         return (int)numbers.stream().count();
     }
 
-//    public static Integer getMaxNumber() {
-//
-//    }
-//
+    public static Integer getMaxNumber() {
+        return numbers.stream().max(Integer::compareTo).get();
+    }
+
 //    public static List<Integer> getAllTwoDigitNumbers() {
 //
 //    }
