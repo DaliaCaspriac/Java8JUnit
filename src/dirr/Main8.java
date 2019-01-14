@@ -31,10 +31,12 @@ public class Main8 {
                 .collect(Collectors.toList());
     }
 
-//    public static Integer countAllEvenNumbers() {
-//
-//    }
-//
+    public static Integer countAllEvenNumbers() {
+        return (int) numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .count();
+    }
+
 //    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
 //
 //    }

@@ -28,11 +28,11 @@ public class MainTest8 {
         assertEquals(Main8.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
     }
 
-//    @Test
-//    public void countAllEvenNumbers() {
-//        assertEquals(Main8.countAllEvenNumbers(), TestGenerators.countAllEvenNumbers());
-//    }
-//
+    @Test
+    public void countAllEvenNumbers() {
+        assertEquals(Main8.countAllEvenNumbers(), TestGenerators.countAllEvenNumbers());
+    }
+
 //    @Test
 //    public void getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
 //        assertEquals(Main8.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse(), TestGenerators.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse());
