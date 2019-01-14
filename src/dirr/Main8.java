@@ -74,10 +74,12 @@ public class Main8 {
                 .collect(Collectors.toList());
     }
 
-//    public static Integer getTotalCharactersInStringsList() {
-//
-//    }
-//
+    public static Integer getTotalCharactersInStringsList() {
+        return strings.stream()
+                .mapToInt(String::length)
+                .sum();
+    }
+
 //    public static List<String> getAllStringsWhichStartWithSmallA() {
 //
 //    }
