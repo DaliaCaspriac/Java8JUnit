@@ -68,10 +68,12 @@ public class Main8 {
                 .toArray(new String[]{});
     }
 
-//    public static List<Integer> getIntegerListOfAllStringLengths() {
-//
-//    }
-//
+    public static List<Integer> getIntegerListOfAllStringLengths() {
+        return strings.stream()
+                .map(String::length)
+                .collect(Collectors.toList());
+    }
+
 //    public static Integer getTotalCharactersInStringsList() {
 //
 //    }
