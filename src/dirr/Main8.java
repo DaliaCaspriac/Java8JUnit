@@ -86,10 +86,12 @@ public class Main8 {
                 .collect(Collectors.toList());
     }
 
-//    public static List<String> getAllStringsWhichContainSmallB() {
-//
-//    }
-//
+    public static List<String> getAllStringsWhichContainSmallB() {
+        return strings.stream()
+                .filter(s -> s.contains("b"))
+                .collect(Collectors.toList());
+    }
+
 //    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
 //
 //    }

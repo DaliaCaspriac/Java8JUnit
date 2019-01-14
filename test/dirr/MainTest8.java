@@ -68,11 +68,11 @@ public class MainTest8 {
         assertEquals(Main8.getAllStringsWhichStartWithSmallA(), TestGenerators.getAllStringsWhichStartWithA());
     }
 
-//    @Test
-//    public void getAllStringsWhichContainB() {
-//        assertEquals(Main8.getAllStringsWhichContainSmallB(), TestGenerators.getAllStringsWhichContainB());
-//    }
-//
+    @Test
+    public void getAllStringsWhichContainB() {
+        assertEquals(Main8.getAllStringsWhichContainSmallB(), TestGenerators.getAllStringsWhichContainB());
+    }
+
 //    @Test
 //    public void getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
 //        assertEquals(Main8.getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters(), TestGenerators.getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters());
