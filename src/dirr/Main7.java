@@ -73,10 +73,15 @@ public class Main7 {
         return null;
     }
 
-//    public static String getAnyStringOfLength30() {
-//
-//    }
-//
+    public static String getAnyStringOfLength30() {
+        for (String str : strings) {
+            if (str.length() == 30) {
+                return str;
+            }
+        }
+        return null;
+    }
+
 //    public static String[] getAllStringsShorterThan10Characters() {
 //
 //    }
