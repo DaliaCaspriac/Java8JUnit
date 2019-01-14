@@ -2,7 +2,9 @@ package dirr;
 
 import dirr.no_peeking.Generators;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
@@ -37,10 +39,15 @@ public class Main8 {
                 .count();
     }
 
-//    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
-//
-//    }
-//
+    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
+        List<Boolean> booleanList = new ArrayList<>();
+        Function<Integer, Boolean> func = x -> x % 7 == 0;
+        return numbers.stream()
+                .map(func)
+                .collect(Collectors.toList())
+                .toArray(new Boolean[]{});
+    }
+
 //    public static String getAnyStringOfLength8() {
 //
 //    }

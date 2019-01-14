@@ -33,11 +33,11 @@ public class MainTest8 {
         assertEquals(Main8.countAllEvenNumbers(), TestGenerators.countAllEvenNumbers());
     }
 
-//    @Test
-//    public void getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
-//        assertEquals(Main8.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse(), TestGenerators.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse());
-//    }
-//
+    @Test
+    public void getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
+        assertEquals(Main8.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse(), TestGenerators.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse());
+    }
+
 //    @Test
 //    public void getAnyStringOfLength8() {
 //        assertEquals(Main8.getAnyStringOfLength8(), TestGenerators.getAnyStringOfLength8());
