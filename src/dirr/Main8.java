@@ -10,10 +10,10 @@ public class Main8 {
     static List<Integer> numbers = Generators.numbers;
     static List<String> strings = Generators.strings;
 
-//    public static Integer countNumbers() {
-//
-//    }
-//
+    public static Integer countNumbers() {
+        return (int)numbers.stream().count();
+    }
+
 //    public static Integer getMaxNumber() {
 //
 //    }

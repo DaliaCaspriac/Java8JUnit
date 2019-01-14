@@ -7,12 +7,12 @@ import static org.junit.Assert.assertEquals;
 
 public class MainTest8 {
 
-//
-//    @Test
-//    public void countNumbers() {
-//        assertEquals(Main8.countNumbers(), TestGenerators.countNumbers());
-//    }
-//
+
+    @Test
+    public void countNumbers() {
+        assertEquals(Main8.countNumbers(), TestGenerators.countNumbers());
+    }
+
 //    @Test
 //    public void getMaxNumber() {
 //        assertEquals(Main8.getMaxNumber(), TestGenerators.getMaxNumber());
