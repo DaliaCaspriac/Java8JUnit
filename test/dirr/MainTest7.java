@@ -39,11 +39,11 @@ public class MainTest7 {
         assertEquals(Main7.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse(), TestGenerators.getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse());
     }
 
-//    @Test
-//    public void getAnyStringOfLength8() {
-//        assertEquals(Main7.getAnyStringOfLength8(), TestGenerators.getAnyStringOfLength8());
-//    }
-//
+    @Test
+    public void getAnyStringOfLength8() {
+        assertEquals(Main7.getAnyStringOfLength8(), TestGenerators.getAnyStringOfLength8());
+    }
+
 //    @Test
 //    public void getAnyStringOfLength30() {
 //        assertEquals(Main7.getAnyStringOfLength30(), TestGenerators.getAnyStringOfLength30());

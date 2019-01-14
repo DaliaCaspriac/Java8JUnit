@@ -44,8 +44,8 @@ public class Main7 {
 
     public static Integer countAllEvenNumbers() {
         int evenNumbersLength = 0;
-        for(Integer n : numbers){
-            if(n % 2 == 0){
+        for (Integer n : numbers) {
+            if (n % 2 == 0) {
                 evenNumbersLength++;
             }
         }
@@ -54,20 +54,25 @@ public class Main7 {
 
     public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
         List<Boolean> booleanList = new ArrayList<>();
-        for(Integer n : numbers){
-            if(n % 7 == 0){
+        for (Integer n : numbers) {
+            if (n % 7 == 0) {
                 booleanList.add(true);
-            }else{
+            } else {
                 booleanList.add(false);
             }
         }
         return booleanList.toArray(new Boolean[]{});
     }
 
-//    public static String getAnyStringOfLength8() {
-//
-//    }
-//
+    public static String getAnyStringOfLength8() {
+        for (String str : strings) {
+            if (str.length() == 8) {
+                return str;
+            }
+        }
+        return null;
+    }
+
 //    public static String getAnyStringOfLength30() {
 //
 //    }
