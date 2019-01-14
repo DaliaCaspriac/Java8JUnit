@@ -43,11 +43,11 @@ public class MainTest8 {
         assertEquals(Main8.getAnyStringOfLength8(), TestGenerators.getAnyStringOfLength8());
     }
 
-//    @Test
-//    public void getAnyStringOfLength30() {
-//        assertEquals(Main8.getAnyStringOfLength30(), TestGenerators.getAnyStringOfLength30());
-//    }
-//
+    @Test
+    public void getAnyStringOfLength30() {
+        assertEquals(Main8.getAnyStringOfLength30(), TestGenerators.getAnyStringOfLength30());
+    }
+
 //    @Test
 //    public void getAllStringsShorterThan10Characters() {
 //        assertEquals(Main8.getAllStringsShorterThan10Characters(), TestGenerators.getAllStringsShorterThan10Characters());

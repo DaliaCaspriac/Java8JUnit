@@ -50,15 +50,17 @@ public class Main8 {
     public static String getAnyStringOfLength8() {
         return strings.stream()
                 .filter(s -> s.length() == 8)
-                .findFirst()
-                .get();
+                .findAny()
+                .orElse(null);
     }
 
-//    public static String getAnyStringOfLength30() {
-//
-//
-//    }
-//
+    public static String getAnyStringOfLength30() {
+        return strings.stream()
+                .filter(s -> s.length() == 30)
+                .findAny()
+                .orElse(null);
+    }
+
 //    public static String[] getAllStringsShorterThan10Characters() {
 //
 //    }
