@@ -80,10 +80,12 @@ public class Main8 {
                 .sum();
     }
 
-//    public static List<String> getAllStringsWhichStartWithSmallA() {
-//
-//    }
-//
+    public static List<String> getAllStringsWhichStartWithSmallA() {
+        return strings.stream()
+                .filter(s -> s.startsWith("a"))
+                .collect(Collectors.toList());
+    }
+
 //    public static List<String> getAllStringsWhichContainSmallB() {
 //
 //    }
