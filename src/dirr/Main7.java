@@ -100,10 +100,14 @@ public class Main7 {
         return stringLengths;
     }
 
-//    public static Integer getTotalCharactersInStringsList() {
-//
-//    }
-//
+    public static Integer getTotalCharactersInStringsList() {
+        Integer totalCharacters = 0;
+        for(String s : strings){
+            totalCharacters += s.length();
+        }
+        return totalCharacters;
+    }
+
 //    public static List<String> getAllStringsWhichStartWithSmallA() {
 //
 //    }
