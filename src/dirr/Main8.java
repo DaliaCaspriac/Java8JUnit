@@ -63,7 +63,7 @@ public class Main8 {
 
     public static String[] getAllStringsShorterThan10Characters() {
         return strings.stream()
-                .filter(s -> s.length()<10)
+                .filter(s -> s.length() < 10)
                 .collect(Collectors.toList())
                 .toArray(new String[]{});
     }
@@ -92,7 +92,10 @@ public class Main8 {
                 .collect(Collectors.toList());
     }
 
-//    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
-//
-//    }
+    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
+        return strings.stream()
+                .filter(s -> s.contains("c") && s.contains("d") && s.length() % 2 != 0)
+                .collect(Collectors.toList())
+                .toArray(new String[]{});
+    }
 }
