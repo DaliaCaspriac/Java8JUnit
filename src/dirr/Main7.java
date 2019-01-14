@@ -82,10 +82,16 @@ public class Main7 {
         return null;
     }
 
-//    public static String[] getAllStringsShorterThan10Characters() {
-//
-//    }
-//
+    public static String[] getAllStringsShorterThan10Characters() {
+        List<String> shorterThan10Char = new ArrayList<>();
+        for (String s : strings) {
+            if (s.length() < 10) {
+                shorterThan10Char.add(s);
+            }
+        }
+        return shorterThan10Char.toArray(new String[]{});
+    }
+
 //    public static List<Integer> getIntegerListOfAllStringLengths() {
 //
 //    }
