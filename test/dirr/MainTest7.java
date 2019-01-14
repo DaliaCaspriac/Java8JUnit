@@ -14,11 +14,11 @@ public class MainTest7 {
         assertEquals(Main7.countNumbers(), TestGenerators.countNumbers());
     }
 
-//    @Test
-//    public void getMaxNumber() {
-//        assertEquals(Main7.getMaxNumber(), TestGenerators.getMaxNumber());
-//    }
-//
+    @Test
+    public void getMaxNumber() {
+        assertEquals(Main7.getMaxNumber(), TestGenerators.getMaxNumber());
+    }
+
 //    @Test
 //    public void getAllTwoDigitNumbers() {
 //        assertEquals(Main7.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());

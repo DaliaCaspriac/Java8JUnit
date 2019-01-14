@@ -13,9 +13,16 @@ public class Main7 {
         return numbers.size();
     }
 
-//    public static Integer getMaxNumber() {
-//    }
-//
+    public static Integer getMaxNumber() {
+        Integer maxValue = numbers.get(0);
+        for(Integer number : numbers){
+            if(number > maxValue){
+                maxValue = number;
+            }
+        }
+        return maxValue;
+    }
+
 //    public static List<Integer> getAllTwoDigitNumbers() {
 //
 //    }
