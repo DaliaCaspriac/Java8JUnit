@@ -42,10 +42,16 @@ public class Main7 {
         return numbersPlus100;
     }
 
-//    public static Integer countAllEvenNumbers() {
-//
-//    }
-//
+    public static Integer countAllEvenNumbers() {
+        int evenNumbersLength = 0;
+        for(Integer n : numbers){
+            if(n % 2 == 0){
+                evenNumbersLength++;
+            }
+        }
+        return evenNumbersLength;
+    }
+
 //    public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
 //
 //    }
