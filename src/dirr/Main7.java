@@ -108,10 +108,16 @@ public class Main7 {
         return totalCharacters;
     }
 
-//    public static List<String> getAllStringsWhichStartWithSmallA() {
-//
-//    }
-//
+    public static List<String> getAllStringsWhichStartWithSmallA() {
+        List<String> stringsWhichStartWithSmallA = new ArrayList<>();
+        for(String s : strings){
+            if(s.startsWith("a")){
+                stringsWhichStartWithSmallA.add(s);
+            }
+        }
+        return stringsWhichStartWithSmallA;
+    }
+
 //    public static List<String> getAllStringsWhichContainSmallB() {
 //
 //    }
