@@ -1,14 +1,19 @@
 package dirr;
 
 
+import dirr.no_peeking.TestGenerators;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 public class MainTest7 {
 
 
-//    @Test
-//    public void countNumbers() {
-//        assertEquals(Main7.countNumbers(), TestGenerators.countNumbers());
-//    }
-//
+    @Test
+    public void countNumbers() {
+        assertEquals(Main7.countNumbers(), TestGenerators.countNumbers());
+    }
+
 //    @Test
 //    public void getMaxNumber() {
 //        assertEquals(Main7.getMaxNumber(), TestGenerators.getMaxNumber());

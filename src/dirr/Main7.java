@@ -9,10 +9,10 @@ public class Main7 {
     static List<Integer> numbers = Generators.numbers;
     static List<String> strings = Generators.strings;
 
-//    public static Integer countNumbers() {
-//
-//    }
-//
+    public static Integer countNumbers() {
+        return numbers.size();
+    }
+
 //    public static Integer getMaxNumber() {
 //    }
 //
