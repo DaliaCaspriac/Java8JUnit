@@ -40,18 +40,20 @@ public class Main8 {
     }
 
     public static Boolean[] getBooleanArrayOfAllNumbersWhereMultiplesOf7AreTrueRestFalse() {
-        List<Boolean> booleanList = new ArrayList<>();
-        Function<Integer, Boolean> func = x -> x % 7 == 0;
+        Function<Integer, Boolean> isMultipleOf7 = x -> x % 7 == 0;
         return numbers.stream()
-                .map(func)
+                .map(isMultipleOf7)
                 .collect(Collectors.toList())
                 .toArray(new Boolean[]{});
     }
 
-//    public static String getAnyStringOfLength8() {
-//
-//    }
-//
+    public static String getAnyStringOfLength8() {
+        return strings.stream()
+                .filter(s -> s.length() == 8)
+                .findFirst()
+                .get();
+    }
+
 //    public static String getAnyStringOfLength30() {
 //
 //
