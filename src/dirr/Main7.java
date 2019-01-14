@@ -2,6 +2,7 @@ package dirr;
 
 import dirr.no_peeking.Generators;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main7 {
@@ -15,18 +16,24 @@ public class Main7 {
 
     public static Integer getMaxNumber() {
         Integer maxValue = numbers.get(0);
-        for(Integer number : numbers){
-            if(number > maxValue){
+        for (Integer number : numbers) {
+            if (number > maxValue) {
                 maxValue = number;
             }
         }
         return maxValue;
     }
 
-//    public static List<Integer> getAllTwoDigitNumbers() {
-//
-//    }
-//
+    public static List<Integer> getAllTwoDigitNumbers() {
+        List<Integer> allTwoDigitNumbers = new ArrayList<>();
+        for (Integer number : numbers) {
+            if (number >= 10 && number <= 99) {
+                allTwoDigitNumbers.add(number);
+            }
+        }
+        return allTwoDigitNumbers;
+    }
+
 //    public static List<Integer> getAllNumbersPlus100() {
 //
 //    }

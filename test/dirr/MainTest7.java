@@ -19,11 +19,11 @@ public class MainTest7 {
         assertEquals(Main7.getMaxNumber(), TestGenerators.getMaxNumber());
     }
 
-//    @Test
-//    public void getAllTwoDigitNumbers() {
-//        assertEquals(Main7.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
-//    }
-//
+    @Test
+    public void getAllTwoDigitNumbers() {
+        assertEquals(Main7.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
+    }
+
 //    @Test
 //    public void getAllNumbersPlus100() {
 //        assertEquals(Main7.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
