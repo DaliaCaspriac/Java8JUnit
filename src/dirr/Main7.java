@@ -128,7 +128,13 @@ public class Main7 {
         return stringsWhichContainsSmallB;
     }
 
-//    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
-//
-//    }
+    public static String[] getAllStringsWhichContainBothCAndDAndHaveAnOddNumberOfCharacters() {
+        List<String> filtered = new ArrayList<>();
+        for(String s : strings){
+            if(s.contains("c") && s.contains("d") && s.length() % 2 != 0){
+                filtered.add(s);
+            }
+        }
+        return filtered.toArray(new String[]{});
+    }
 }
