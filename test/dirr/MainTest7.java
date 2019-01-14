@@ -54,11 +54,11 @@ public class MainTest7 {
         assertEquals(Main7.getAllStringsShorterThan10Characters(), TestGenerators.getAllStringsShorterThan10Characters());
     }
 
-//    @Test
-//    public void getIntegerListOfAllStringLengths() {
-//        assertEquals(Main7.getIntegerListOfAllStringLengths(), TestGenerators.getIntegerListOfAllStringLengths());
-//    }
-//
+    @Test
+    public void getIntegerListOfAllStringLengths() {
+        assertEquals(Main7.getIntegerListOfAllStringLengths(), TestGenerators.getIntegerListOfAllStringLengths());
+    }
+
 //    @Test
 //    public void getTotalCharactersInStringsList() {
 //        assertEquals(Main7.getTotalCharactersInStringsList(), TestGenerators.getTotalCharactersInStringsList());

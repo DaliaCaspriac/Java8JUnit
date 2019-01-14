@@ -92,10 +92,14 @@ public class Main7 {
         return shorterThan10Char.toArray(new String[]{});
     }
 
-//    public static List<Integer> getIntegerListOfAllStringLengths() {
-//
-//    }
-//
+    public static List<Integer> getIntegerListOfAllStringLengths() {
+        List<Integer> stringLengths = new ArrayList<>();
+        for(String s : strings){
+            stringLengths.add(s.length());
+        }
+        return stringLengths;
+    }
+
 //    public static Integer getTotalCharactersInStringsList() {
 //
 //    }
