@@ -3,6 +3,7 @@ package dirr;
 import dirr.no_peeking.Generators;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class Main8 {
@@ -11,17 +12,19 @@ public class Main8 {
     static List<String> strings = Generators.strings;
 
     public static Integer countNumbers() {
-        return (int)numbers.stream().count();
+        return (int) numbers.stream().count();
     }
 
     public static Integer getMaxNumber() {
         return numbers.stream().max(Integer::compareTo).get();
     }
 
-//    public static List<Integer> getAllTwoDigitNumbers() {
-//
-//    }
-//
+    public static List<Integer> getAllTwoDigitNumbers() {
+        return numbers.stream()
+                .filter(n -> n >= 10 && n <= 99)
+                .collect(Collectors.toList());
+    }
+
 //    public static List<Integer> getAllNumbersPlus100() {
 //
 //    }

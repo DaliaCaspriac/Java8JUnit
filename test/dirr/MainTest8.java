@@ -18,10 +18,10 @@ public class MainTest8 {
         assertEquals(Main8.getMaxNumber(), TestGenerators.getMaxNumber());
     }
 
-//    @Test
-//    public void getAllTwoDigitNumbers() {
-//        assertEquals(Main8.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
-//    }
+    @Test
+    public void getAllTwoDigitNumbers() {
+        assertEquals(Main8.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
+    }
 //
 //    @Test
 //    public void getAllNumbersPlus100() {
