@@ -24,11 +24,11 @@ public class MainTest7 {
         assertEquals(Main7.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
     }
 
-//    @Test
-//    public void getAllNumbersPlus100() {
-//        assertEquals(Main7.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
-//    }
-//
+    @Test
+    public void getAllNumbersPlus100() {
+        assertEquals(Main7.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
+    }
+
 //    @Test
 //    public void countAllEvenNumbers() {
 //        assertEquals(Main7.countAllEvenNumbers(), TestGenerators.countAllEvenNumbers());

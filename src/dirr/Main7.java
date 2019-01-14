@@ -34,10 +34,14 @@ public class Main7 {
         return allTwoDigitNumbers;
     }
 
-//    public static List<Integer> getAllNumbersPlus100() {
-//
-//    }
-//
+    public static List<Integer> getAllNumbersPlus100() {
+        List<Integer> numbersPlus100 = new ArrayList<>();
+        for (Integer number : numbers) {
+            numbersPlus100.add(number + 100);
+        }
+        return numbersPlus100;
+    }
+
 //    public static Integer countAllEvenNumbers() {
 //
 //    }
