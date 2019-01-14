@@ -22,12 +22,12 @@ public class MainTest8 {
     public void getAllTwoDigitNumbers() {
         assertEquals(Main8.getAllTwoDigitNumbers(), TestGenerators.getAllTwoDigitNumbers());
     }
-//
-//    @Test
-//    public void getAllNumbersPlus100() {
-//        assertEquals(Main8.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
-//    }
-//
+
+    @Test
+    public void getAllNumbersPlus100() {
+        assertEquals(Main8.getAllNumbersPlus100(), TestGenerators.getAllNumbersPlus100());
+    }
+
 //    @Test
 //    public void countAllEvenNumbers() {
 //        assertEquals(Main8.countAllEvenNumbers(), TestGenerators.countAllEvenNumbers());

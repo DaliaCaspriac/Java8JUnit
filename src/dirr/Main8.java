@@ -25,10 +25,12 @@ public class Main8 {
                 .collect(Collectors.toList());
     }
 
-//    public static List<Integer> getAllNumbersPlus100() {
-//
-//    }
-//
+    public static List<Integer> getAllNumbersPlus100() {
+        return numbers.stream()
+                .map(n -> n + 100)
+                .collect(Collectors.toList());
+    }
+
 //    public static Integer countAllEvenNumbers() {
 //
 //    }
