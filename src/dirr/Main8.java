@@ -2,7 +2,6 @@ package dirr;
 
 import dirr.no_peeking.Generators;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -14,11 +13,14 @@ public class Main8 {
     static List<String> strings = Generators.strings;
 
     public static Integer countNumbers() {
-        return (int) numbers.stream().count();
+        return ((Long)numbers.stream().count()).intValue();
     }
 
     public static Integer getMaxNumber() {
-        return numbers.stream().max(Integer::compareTo).get();
+        return numbers.stream().
+                mapToInt(Integer::intValue)
+                .max()
+                .getAsInt();
     }
 
     public static List<Integer> getAllTwoDigitNumbers() {
